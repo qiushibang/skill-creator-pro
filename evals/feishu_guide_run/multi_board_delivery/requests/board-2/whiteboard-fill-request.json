@@ -1,0 +1,7 @@
+{
+  "tool": "lark-doc-whiteboard-update",
+  "board_type": "custom-board-2",
+  "board_spec_path": "board/board-02-skill-flow.json",
+  "requires_board_token_from_update": true,
+  "dry_run_first": true
+}

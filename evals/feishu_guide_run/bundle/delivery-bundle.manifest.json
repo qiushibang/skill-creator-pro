@@ -1,0 +1,15 @@
+{
+  "modules": {
+    "clarification": "built-in",
+    "execution": "built-in",
+    "lark_delivery": "built-in",
+    "chart_delivery": "built-in"
+  },
+  "deliverables": {
+    "guide_markdown": "guide/feishu-guide.md",
+    "normalized_spec": "guide/guide-spec.normalized.json",
+    "action_plan": "guide/feishu-action-plan.json",
+    "board_spec": "board/skill-overview-board.json",
+    "command_plan": "guide-commands/lark-doc-commands.json"
+  }
+}

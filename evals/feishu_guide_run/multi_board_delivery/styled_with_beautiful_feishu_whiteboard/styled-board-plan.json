@@ -1,0 +1,84 @@
+{
+  "tooling_skill": "beautiful-feishu-whiteboard",
+  "global_notes": [
+    "使用 beautiful-feishu-whiteboard 负责风格选择和飞书白板视觉呈现。",
+    "内容结构沿用当前已整理好的 board spec，不重新发散业务内容。",
+    "若要真正写入飞书，需要 lark-cli 已完成认证，并有目标文档或白板 token。"
+  ],
+  "boards": [
+    {
+      "id": "board-01",
+      "source_spec": "board/board-01-skill-integration-painpoints.json",
+      "recommended_style": {
+        "name": "Riso Brut",
+        "slug": "riso-brut",
+        "reason": "适合“能力整合 + 痛点 + 解决方案”这类信息密度较高的策略说明板，风格稳且有设计感。"
+      },
+      "alternative_style": {
+        "name": "Neo-Grid Bold",
+        "slug": "neo-grid-bold",
+        "reason": "更偏编辑感和结构化，适合把多技能能力分组做得更清晰。"
+      },
+      "visual_brief": {
+        "goal": "让读者一眼看懂：原来能力散落在多个技能中，导致真实使用时流程割裂；当前 skill 把这些能力收口成单包闭环。",
+        "audience": "准备安装或使用 skill-creator-pro 的最终用户",
+        "layout_hint": "建议做成三段式信息图：左侧是被整合能力分组，中间是割裂痛点，右侧是当前 skill 的收口价值；中间用箭头或对比关系衔接。",
+        "tone": "专业、结构清楚、略带产品设计感，不要太花。",
+        "must_include": [
+          "被整合进来的核心能力及其作用",
+          "原来多 skill 分散使用时的割裂点",
+          "当前 skill 的解决方式与价值"
+        ],
+        "must_avoid": [
+          "把 prompt 或制作说明写到板子上",
+          "堆太多说明性小字",
+          "把所有 skill 平铺成无结构列表"
+        ]
+      }
+    },
+    {
+      "id": "board-02",
+      "source_spec": "board/board-02-skill-flow.json",
+      "recommended_style": {
+        "name": "Raw Grid",
+        "slug": "raw-grid",
+        "reason": "适合流程型、系统型说明图，结构利落，能把主链路和子系统分区做清楚。"
+      },
+      "alternative_style": {
+        "name": "Cobalt Glaze",
+        "slug": "cobalt-glaze",
+        "reason": "如果希望更稳重、偏正式文档气质，可以用这个。"
+      },
+      "visual_brief": {
+        "goal": "让读者快速建立从用户输入到最终交付的完整流程心智模型。",
+        "audience": "第一次接触当前 skill 的读者或使用者",
+        "layout_hint": "建议做成横向或纵向流程图，分成用户输入、系统主链路、内置子系统、最终交付物四个泳道或四列。把 Gate 1 和 Gate 2 做成高亮检查点。",
+        "tone": "清晰、系统化、易扫描，优先强调流程而不是装饰。",
+        "must_include": [
+          "用户侧输入",
+          "系统主链路",
+          "内置子系统",
+          "最终交付物",
+          "Gate 1 / Gate 2"
+        ],
+        "must_avoid": [
+          "画成过于松散的海报",
+          "把流程顺序打乱",
+          "忽略 Gate 1 / Gate 2 的存在"
+        ]
+      }
+    }
+  ],
+  "recommended_insertions": [
+    {
+      "after_section": "技能简介",
+      "board": "board-01",
+      "reason": "这里最适合先回答“为什么要有这个技能”与“它解决什么痛点”。"
+    },
+    {
+      "after_section": "使用步骤",
+      "board": "board-02",
+      "reason": "这里最适合把前面文字步骤抽象成完整流程图，帮助读者形成全局认知。"
+    }
+  ]
+}

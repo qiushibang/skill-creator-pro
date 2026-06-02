@@ -1,0 +1,61 @@
+{
+  "board_type": "skill-end-to-end-flow-board",
+  "placement": {
+    "after_section": "使用步骤",
+    "mode": "insert_after_section"
+  },
+  "title": "skill-creator-pro 的功能与流程",
+  "subtitle": "从一句需求，到飞书指南、画板与 Agent 安装包",
+  "lanes": [
+    {
+      "title": "用户侧输入",
+      "items": [
+        "描述想沉淀成 skill 的场景",
+        "补充参考资料 / 目标输出 / 特殊约束",
+        "在 Gate 1 确认计划",
+        "在 Gate 2 验收交付物"
+      ]
+    },
+    {
+      "title": "系统主链路",
+      "items": [
+        "生成 clarification-summary",
+        "检查可复用 skill / source-map",
+        "判断 simple / complex",
+        "初始化 task_plan / findings / progress / execution-state",
+        "进入实现、验证、评审与安全检查",
+        "生成飞书指南、画板与命令计划",
+        "完成 Agent 安装包打包"
+      ]
+    },
+    {
+      "title": "内置子系统",
+      "items": [
+        "Clarification Engine：显式澄清而不是静默脑补",
+        "Execution Spine：Gate 1 / Gate 2 + verify 流程",
+        "Lark Delivery：飞书文档与请求封装",
+        "Chart Delivery：默认介绍板 + 轻量图表流水线",
+        "Packaging：quick_validate / package_skill / package_agent_install"
+      ]
+    },
+    {
+      "title": "最终交付物",
+      "items": [
+        "skill 目录",
+        "test / review / security 摘要",
+        "飞书使用指南",
+        "两张介绍画板",
+        "Agent 安装 zip 与 manifest"
+      ]
+    }
+  ],
+  "checkpoints": [
+    "Gate 1：计划确认",
+    "Gate 2：交付验收"
+  ],
+  "highlights": [
+    "不是单点功能，而是完整交付流水线",
+    "飞书图文与 Agent 安装包打包默认内建",
+    "复杂能力被统一编排"
+  ]
+}

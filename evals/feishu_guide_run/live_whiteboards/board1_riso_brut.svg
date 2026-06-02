@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="980" viewBox="0 0 1680 980">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 4 L0 8 z" fill="#0F0F0F"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1680" height="980" fill="#EFE9D9"/>
+  <rect x="82" y="72" width="1516" height="98" fill="#F5C518" stroke="#0F0F0F" stroke-width="4"/>
+  <rect x="94" y="84" width="1516" height="98" fill="#E85A1F"/>
+  <rect x="82" y="72" width="1516" height="98" fill="#F5C518" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="120" y="120" font-size="34" font-weight="700" fill="#0F0F0F">为什么要把多个技能整合进 skill-creator-pro</text>
+  <text x="120" y="154" font-size="18" font-weight="600" fill="#2A2A2A">从分散能力、割裂流程，到单包闭环交付</text>
+
+  <!-- left column shadow + panel -->
+  <rect x="106" y="228" width="470" height="642" fill="#0F0F0F"/>
+  <rect x="94" y="216" width="470" height="642" fill="#1F8A4C" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="126" y="258" font-size="26" font-weight="700" fill="#EFE9D9">被整合进来的核心能力</text>
+
+  <rect x="126" y="286" width="406" height="98" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="146" y="318" font-size="18" font-weight="700" fill="#0F0F0F">需求澄清 / 设计前置</text>
+  <text x="146" y="348" font-size="16" font-weight="500" fill="#0F0F0F">• brainstorming：先澄清目标、约束、验收标准</text>
+
+  <rect x="126" y="400" width="406" height="120" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="146" y="432" font-size="18" font-weight="700" fill="#0F0F0F">计划 / 执行 / 验证骨架</text>
+  <text x="146" y="462" font-size="16" font-weight="500" fill="#0F0F0F">• superpowers：计划、执行、验证、review</text>
+  <text x="146" y="490" font-size="16" font-weight="500" fill="#0F0F0F">• planning-with-files：task_plan / findings / progress</text>
+
+  <rect x="126" y="536" width="406" height="120" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="146" y="568" font-size="18" font-weight="700" fill="#0F0F0F">Skill 开发与交付</text>
+  <text x="146" y="598" font-size="16" font-weight="500" fill="#0F0F0F">• skill-creator：结构、校验、打包、多 Agent 输出</text>
+  <text x="146" y="626" font-size="16" font-weight="500" fill="#0F0F0F">• find-skills：开发前先检查可复用来源</text>
+
+  <rect x="126" y="672" width="406" height="172" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="146" y="704" font-size="18" font-weight="700" fill="#0F0F0F">飞书 / 图表 / Lark 补位</text>
+  <text x="146" y="734" font-size="16" font-weight="500" fill="#0F0F0F">• lark-doc / lark-whiteboard：文档与画板落地</text>
+  <text x="146" y="762" font-size="16" font-weight="500" fill="#0F0F0F">• design-lark-chart：图表样式、流水线、质量门</text>
+  <text x="146" y="790" font-size="16" font-weight="500" fill="#0F0F0F">• lark-openapi-explorer：OpenAPI 探索</text>
+  <text x="146" y="818" font-size="16" font-weight="500" fill="#0F0F0F">• lark-skill-maker：Lark skill 规格沉淀</text>
+
+  <!-- middle column -->
+  <rect x="626" y="240" width="410" height="604" fill="#0F0F0F"/>
+  <rect x="614" y="228" width="410" height="604" fill="#F06CA8" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="646" y="270" font-size="26" font-weight="700" fill="#0F0F0F">原来分散使用时的割裂点</text>
+  <rect x="646" y="304" width="346" height="110" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="668" y="340" font-size="20" font-weight="700" fill="#0F0F0F">1 记忆成本高</text>
+  <text x="668" y="372" font-size="16" font-weight="500" fill="#0F0F0F">多个 skill 的触发方式和边界都要记</text>
+  <rect x="646" y="430" width="346" height="110" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="668" y="466" font-size="20" font-weight="700" fill="#0F0F0F">2 流程断裂</text>
+  <text x="668" y="498" font-size="16" font-weight="500" fill="#0F0F0F">澄清 / 计划 / 开发 / 飞书交付分散在不同链路</text>
+  <rect x="646" y="556" width="346" height="110" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="668" y="592" font-size="20" font-weight="700" fill="#0F0F0F">3 上下文重复解释</text>
+  <text x="668" y="624" font-size="16" font-weight="500" fill="#0F0F0F">每一步都要重新说明前情和目标</text>
+  <rect x="646" y="682" width="346" height="110" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="668" y="718" font-size="20" font-weight="700" fill="#0F0F0F">4 最后一公里易断</text>
+  <text x="668" y="750" font-size="16" font-weight="500" fill="#0F0F0F">图表、文档和 Agent 安装包打包缺少统一收口</text>
+
+  <!-- right column -->
+  <rect x="1134" y="228" width="450" height="642" fill="#E85A1F"/>
+  <rect x="1122" y="216" width="450" height="642" fill="#F5C518" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="1156" y="258" font-size="26" font-weight="700" fill="#0F0F0F">当前 skill 的解决方式</text>
+  <rect x="1156" y="292" width="382" height="122" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="1178" y="328" font-size="20" font-weight="700" fill="#0F0F0F">统一主链路</text>
+  <text x="1178" y="360" font-size="16" font-weight="500" fill="#0F0F0F">需求澄清 → 计划 → 开发 → 验证 → 飞书图文 → Agent 安装包打包</text>
+  <rect x="1156" y="430" width="382" height="96" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="1178" y="466" font-size="20" font-weight="700" fill="#0F0F0F">能力内置</text>
+  <text x="1178" y="498" font-size="16" font-weight="500" fill="#0F0F0F">常用外部能力被收口为当前 skill 的本地模块</text>
+  <rect x="1156" y="542" width="382" height="96" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="1178" y="578" font-size="20" font-weight="700" fill="#0F0F0F">双 Gate 控制</text>
+  <text x="1178" y="610" font-size="16" font-weight="500" fill="#0F0F0F">Gate 1 / Gate 2 保证流程自动化但不失控</text>
+  <rect x="1156" y="654" width="382" height="140" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="1178" y="690" font-size="20" font-weight="700" fill="#0F0F0F">统一交付收口</text>
+  <text x="1178" y="722" font-size="16" font-weight="500" fill="#0F0F0F">文档、画板、命令计划、zip 包一起产出</text>
+  <text x="1178" y="750" font-size="16" font-weight="700" fill="#0F0F0F">从能力集合升级为端到端工作流</text>
+
+  <line x1="564" y1="528" x2="614" y2="528" stroke="#0F0F0F" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1024" y1="528" x2="1122" y2="528" stroke="#0F0F0F" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="614" y="862" width="830" height="64" fill="#EFE9D9" stroke="#0F0F0F" stroke-width="4"/>
+  <text x="646" y="902" font-size="20" font-weight="700" fill="#0F0F0F">多技能能力被单包收口 · 解决上下文割裂 · 把交付链真正串起来</text>
+</svg>

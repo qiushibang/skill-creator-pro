@@ -1,0 +1,7 @@
+{
+  "tool": "lark-doc-whiteboard-update",
+  "board_type": "custom-board-1",
+  "board_spec_path": "board/board-01-skill-integration-painpoints.json",
+  "requires_board_token_from_update": true,
+  "dry_run_first": true
+}

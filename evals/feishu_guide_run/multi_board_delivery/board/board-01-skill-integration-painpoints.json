@@ -1,0 +1,107 @@
+{
+  "board_type": "skill-capability-integration-board",
+  "placement": {
+    "after_section": "技能简介",
+    "mode": "insert_after_section"
+  },
+  "title": "为什么要把多个技能整合进 skill-creator-pro",
+  "subtitle": "从分散能力、割裂流程，到单包闭环交付",
+  "panels": [
+    {
+      "id": "capability-groups",
+      "title": "被整合进来的核心能力",
+      "groups": [
+        {
+          "theme": "需求澄清 / 设计前置",
+          "skills": [
+            {
+              "name": "brainstorming",
+              "role": "先澄清目标、约束、验收标准，避免一上来直接实现"
+            }
+          ]
+        },
+        {
+          "theme": "计划 / 执行 / 验证骨架",
+          "skills": [
+            {
+              "name": "superpowers",
+              "role": "提供 writing-plans、executing-plans、TDD、verify、review 等执行骨架"
+            },
+            {
+              "name": "planning-with-files",
+              "role": "维护 task_plan / findings / progress 等文件化状态"
+            }
+          ]
+        },
+        {
+          "theme": "Skill 开发与交付",
+          "skills": [
+            {
+              "name": "skill-creator",
+              "role": "生成 skill 结构、校验、打包、多 Agent 兼容输出"
+            },
+            {
+              "name": "find-skills",
+              "role": "开发前检查是否已有现成 skill 可复用"
+            }
+          ]
+        },
+        {
+          "theme": "飞书文档 / 画板 / 图表",
+          "skills": [
+            {
+              "name": "lark-doc",
+              "role": "创建和更新飞书文档，生成文档 action plan"
+            },
+            {
+              "name": "lark-whiteboard",
+              "role": "插入和更新画板，连接文档与画板落地"
+            },
+            {
+              "name": "design-lark-chart",
+              "role": "生成高质量图表/画板的样式、流水线和质量门"
+            }
+          ]
+        },
+        {
+          "theme": "Lark 深水区补位",
+          "skills": [
+            {
+              "name": "lark-openapi-explorer",
+              "role": "当现有 CLI/skill 覆盖不到时，探索原生 OpenAPI"
+            },
+            {
+              "name": "lark-skill-maker",
+              "role": "把飞书自动化需求沉淀成新的 Lark skill 规格"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fragmentation",
+      "title": "原来分散使用时的割裂点",
+      "items": [
+        "用户需要记住多个 skill 的触发方式与边界",
+        "澄清、计划、开发、验证、飞书交付与打包分散在不同链路里",
+        "每一步都可能重新解释上下文，效率低且容易漏步骤",
+        "图表、文档和 Agent 安装包打包缺少统一收口，临门一脚最容易断"
+      ]
+    },
+    {
+      "id": "value",
+      "title": "当前 skill 的解决方式",
+      "items": [
+        "把需求澄清 → 计划 → 开发 → 验证 → 飞书图文 → Agent 安装包打包串成主链路",
+        "把常用外部能力内置为本地模块，不再依赖单独安装多个 skill",
+        "保留 Gate 1 / Gate 2，让流程既自动化又可控",
+        "把飞书文档、画板、命令计划和 zip 包统一产出"
+      ]
+    }
+  ],
+  "highlights": [
+    "多技能能力被单包收口",
+    "解决真实使用中的上下文割裂",
+    "从能力集合升级为端到端工作流"
+  ]
+}

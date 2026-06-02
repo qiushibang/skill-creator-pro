@@ -1,0 +1,112 @@
+{
+  "skill_name": "skill-creator-pro",
+  "title": "skill-creator-pro 飞书使用指南",
+  "summary": "这是一个适配多 Agent 的单包 Skill 自动开发器。它把需求澄清、计划、开发、测试、评审、飞书图文指南和 Agent 安装包打包整合进一个技能目录里，目标是让用户只安装这一个技能就能完成从需求描述到 skill 交付的闭环。",
+  "scenarios": [
+    "把重复工作沉淀成可复用 skill",
+    "希望自动完成需求澄清、计划、开发、测试、评审与打包",
+    "希望最终自动产出飞书使用指南和介绍画板",
+    "不想额外安装 brainstorming、superpowers、lark-doc、design-lark-chart 等多个技能"
+  ],
+  "triggers": [
+    "帮我做一个 skill",
+    "把这个流程沉淀成技能",
+    "帮我自动生成 Agent 可安装 skill",
+    "帮我给 skill 生成飞书指南和画板"
+  ],
+  "inputs": [
+    "自然语言需求描述",
+    "可选的已有 skill/脚本/参考资料",
+    "可选的飞书文档目标位置"
+  ],
+  "outputs": [
+    "可安装的 skill 目录",
+    "Agent 兼容安装包",
+    "测试/评审/安全摘要",
+    "飞书使用指南",
+    "默认介绍画板与文档插入计划"
+  ],
+  "steps": [
+    "生成显式需求澄清摘要，确认目标/输入/输出/约束/验收标准",
+    "检索可复用 skill 与参考资料，判断 simple / complex",
+    "创建 task_plan / findings / progress，并停在 Gate 1 等待确认",
+    "用户确认后进入开发与验证，持续更新执行状态与证据",
+    "汇总测试、评审、安全摘要，并停在 Gate 2 等待验收",
+    "用户验收通过后，生成飞书使用指南、画板与命令计划",
+    "完成 Agent 安装包打包，输出 zip 与安装清单"
+  ],
+  "limitations": [
+    "正式开发前必须经过 Gate 1 确认",
+    "最终交付前必须经过 Gate 2 验收",
+    "没有验证证据不能宣称完成",
+    "如果外部飞书权限或画板写入受限，会降级为本地交付包"
+  ],
+  "faq": [
+    {
+      "q": "为什么这个 skill 要集成多个能力？",
+      "a": "因为原始能力通常分散在 brainstorming、superpowers、skill-creator、lark-doc、design-lark-chart 等多个 skill 中，真实使用时需要频繁切换，体验割裂。"
+    },
+    {
+      "q": "它会自动生成飞书画板吗？",
+      "a": "会。默认会生成介绍当前 skill 的画板，并给出插入文档的 action plan；若外部环境受限，则先输出本地 board spec 与命令计划。"
+    },
+    {
+      "q": "是否还需要单独安装 design-lark-chart？",
+      "a": "不需要。当前 skill 已经内置了轻量图表流水线和默认介绍板生成能力。"
+    }
+  ],
+  "markdown": "## 技能简介\n\n这是一个适配多 Agent 的单包 Skill 自动开发器。它把需求澄清、计划、开发、测试、评审、飞书图文指南和 Agent 安装包打包整合进一个技能目录里，目标是让用户只安装这一个技能就能完成从需求描述到 skill 交付的闭环。\n\n## 适用场景\n\n- 把重复工作沉淀成可复用 skill\n- 希望自动完成需求澄清、计划、开发、测试、评审与打包\n- 希望最终自动产出飞书使用指南和介绍画板\n- 不想额外安装 brainstorming、superpowers、lark-doc、design-lark-chart 等多个技能\n\n## 触发方式\n\n- 帮我做一个 skill\n- 把这个流程沉淀成技能\n- 帮我自动生成 Agent 可安装 skill\n- 帮我给 skill 生成飞书指南和画板\n\n## 输入 / 输出\n\n### 输入\n- 自然语言需求描述\n- 可选的已有 skill/脚本/参考资料\n- 可选的飞书文档目标位置\n\n### 输出\n- 可安装的 skill 目录\n- Agent 兼容安装包\n- 测试/评审/安全摘要\n- 飞书使用指南\n- 默认介绍画板与文档插入计划\n\n## 使用步骤\n\n1. 生成显式需求澄清摘要，确认目标/输入/输出/约束/验收标准\n2. 检索可复用 skill 与参考资料，判断 simple / complex\n3. 创建 task_plan / findings / progress，并停在 Gate 1 等待确认\n4. 用户确认后进入开发与验证，持续更新执行状态与证据\n5. 汇总测试、评审、安全摘要，并停在 Gate 2 等待验收\n6. 用户验收通过后，生成飞书使用指南、画板与命令计划\n7. 完成 Agent 安装包打包，输出 zip 与安装清单\n\n## 限制与注意事项\n\n- 正式开发前必须经过 Gate 1 确认\n- 最终交付前必须经过 Gate 2 验收\n- 没有验证证据不能宣称完成\n- 如果外部飞书权限或画板写入受限，会降级为本地交付包\n\n## 常见问题\n\n- **为什么这个 skill 要集成多个能力？**\n  - 因为原始能力通常分散在 brainstorming、superpowers、skill-creator、lark-doc、design-lark-chart 等多个 skill 中，真实使用时需要频繁切换，体验割裂。\n- **它会自动生成飞书画板吗？**\n  - 会。默认会生成介绍当前 skill 的画板，并给出插入文档的 action plan；若外部环境受限，则先输出本地 board spec 与命令计划。\n- **是否还需要单独安装 design-lark-chart？**\n  - 不需要。当前 skill 已经内置了轻量图表流水线和默认介绍板生成能力。\n",
+  "sections": [
+    {
+      "title": "技能简介",
+      "markdown": "## 技能简介\n\n这是一个适配多 Agent 的单包 Skill 自动开发器。它把需求澄清、计划、开发、测试、评审、飞书图文指南和 Agent 安装包打包整合进一个技能目录里，目标是让用户只安装这一个技能就能完成从需求描述到 skill 交付的闭环。"
+    },
+    {
+      "title": "适用场景",
+      "markdown": "## 适用场景\n\n- 把重复工作沉淀成可复用 skill\n- 希望自动完成需求澄清、计划、开发、测试、评审与打包\n- 希望最终自动产出飞书使用指南和介绍画板\n- 不想额外安装 brainstorming、superpowers、lark-doc、design-lark-chart 等多个技能"
+    },
+    {
+      "title": "触发方式",
+      "markdown": "## 触发方式\n\n- 帮我做一个 skill\n- 把这个流程沉淀成技能\n- 帮我自动生成 Agent 可安装 skill\n- 帮我给 skill 生成飞书指南和画板"
+    },
+    {
+      "title": "输入 / 输出",
+      "markdown": "## 输入 / 输出\n\n### 输入\n- 自然语言需求描述\n- 可选的已有 skill/脚本/参考资料\n- 可选的飞书文档目标位置\n\n### 输出\n- 可安装的 skill 目录\n- Agent 兼容安装包\n- 测试/评审/安全摘要\n- 飞书使用指南\n- 默认介绍画板与文档插入计划"
+    },
+    {
+      "title": "使用步骤",
+      "markdown": "## 使用步骤\n\n1. 生成显式需求澄清摘要，确认目标/输入/输出/约束/验收标准\n2. 检索可复用 skill 与参考资料，判断 simple / complex\n3. 创建 task_plan / findings / progress，并停在 Gate 1 等待确认\n4. 用户确认后进入开发与验证，持续更新执行状态与证据\n5. 汇总测试、评审、安全摘要，并停在 Gate 2 等待验收\n6. 用户验收通过后，生成飞书使用指南、画板与命令计划\n7. 完成 Agent 安装包打包，输出 zip 与安装清单"
+    },
+    {
+      "title": "限制与注意事项",
+      "markdown": "## 限制与注意事项\n\n- 正式开发前必须经过 Gate 1 确认\n- 最终交付前必须经过 Gate 2 验收\n- 没有验证证据不能宣称完成\n- 如果外部飞书权限或画板写入受限，会降级为本地交付包"
+    },
+    {
+      "title": "常见问题",
+      "markdown": "## 常见问题\n\n- **为什么这个 skill 要集成多个能力？**\n  - 因为原始能力通常分散在 brainstorming、superpowers、skill-creator、lark-doc、design-lark-chart 等多个 skill 中，真实使用时需要频繁切换，体验割裂。\n- **它会自动生成飞书画板吗？**\n  - 会。默认会生成介绍当前 skill 的画板，并给出插入文档的 action plan；若外部环境受限，则先输出本地 board spec 与命令计划。\n- **是否还需要单独安装 design-lark-chart？**\n  - 不需要。当前 skill 已经内置了轻量图表流水线和默认介绍板生成能力。"
+    }
+  ],
+  "feishu": {
+    "title": "skill-creator-pro 飞书使用指南",
+    "folder_token": null,
+    "wiki_node": null,
+    "wiki_space": null,
+    "doc_id": "FHoHdkVsGolDBdxWovVl7wTfgOf",
+    "chunk_limit": 1500,
+    "doc_url": "https://bytedance.larkoffice.com/docx/FHoHdkVsGolDBdxWovVl7wTfgOf"
+  },
+  "embedded_board": {
+    "enabled": true,
+    "board_type": "skill-overview-board",
+    "audience": "end-user",
+    "placement": {
+      "after_section": "技能简介",
+      "mode": "insert_after_section"
+    },
+    "focus": [
+      "how_to_trigger",
+      "how_it_progresses",
+      "what_user_gets"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "guide": {
+    "markdown": "guide/feishu-guide-enhanced.md"
+  },
+  "boards": [
+    {
+      "id": "board-01",
+      "title": "为什么要把多个技能整合进 skill-creator-pro",
+      "placement": {
+        "after_section": "技能简介",
+        "mode": "insert_after_section"
+      },
+      "board_spec_path": "board/board-01-skill-integration-painpoints.json",
+      "insert_markdown": "<whiteboard type=\"blank\"></whiteboard>",
+      "explanation_before": "下图说明为什么当前 skill 要整合多个外部 skill 的能力，以及原有多 skill 使用方式的割裂与痛点。",
+      "explanation_after": "看完这张图后，读者会先理解这个 skill 的存在意义，再进入具体使用方法。"
+    },
+    {
+      "id": "board-02",
+      "title": "skill-creator-pro 的功能与流程",
+      "placement": {
+        "after_section": "使用步骤",
+        "mode": "insert_after_section"
+      },
+      "board_spec_path": "board/board-02-skill-flow.json",
+      "insert_markdown": "<whiteboard type=\"blank\"></whiteboard>",
+      "explanation_before": "下图把当前技能从用户输入到最终交付的完整流程串起来，便于快速建立整体认知。",
+      "explanation_after": "这张图适合作为读者理解整条主流程的导航板。"
+    }
+  ],
+  "recommended_insertions": [
+    {
+      "after_section": "技能简介",
+      "board": "board-01",
+      "reason": "这里最适合先回答“为什么要有这个技能”与“它解决什么痛点”。"
+    },
+    {
+      "after_section": "使用步骤",
+      "board": "board-02",
+      "reason": "这里最适合把前面文字步骤抽象成完整流程图，帮助读者形成全局认知。"
+    }
+  ]
+}
