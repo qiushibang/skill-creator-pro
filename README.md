@@ -1,34 +1,45 @@
-![Skill Creator Pro Board 1](docs/images/board-01.svg)
-
-![Skill Creator Pro Board 2](docs/images/board-02.svg)
-
 # skill-creator-pro
+
+把一个流程想法，直接沉淀成一个可复用、可交付、可打包的 skill。
 
 **skill-creator-pro** 是一个面向多 Agent 的单包 Skill 自动开发器。它把需求澄清、复用检索、计划生成、开发执行、验证、飞书指南、默认介绍画板，以及 Agent 安装包打包整合进一个技能目录里，目标是让用户只安装这一个技能，就能完成从场景描述到 skill 交付的闭环。
 
-## 这个仓库是什么
+> 如果你不想再把「澄清、计划、开发、验证、文档、画板、打包」拆成多段流程分别处理，这个 skill 就是用来把这些环节收口到一条主链路里的。
 
-这是一个 **skill-only 发布仓库**。
+## 适合谁
 
-仓库中只保留 skill 本体需要的核心内容：
+这个 skill 特别适合：
 
-- `SKILL.md`
-- `agents/`
-- `assets/`
-- `references/`
-- `scripts/`
-- README 顶部展示用图片
+- 想把经验流程产品化，而不是只停留在一次性操作的人
+- 想把“从需求到交付”的链路整合成一个 skill 的人
+- 希望最终给别人直接使用，而不是只做本地实验的人
+- 需要同时考虑文档、画板、安装包交付的人
 
-像测试用例、评估过程、验证报告、构建产物这类开发过程文件，不作为公开仓库长期内容保留。
+## 不适合谁
 
-## 适用场景
+如果你只想临时写一个一次性小脚本，或者根本不需要交付给别人使用，这个 skill 可能会比你当前需要的更完整、更重一些。
 
-这个 skill 适合以下场景：
+## 你可以用它做什么
 
-- 想把一个重复流程沉淀成可复用的 skill
-- 希望自动完成需求澄清、计划、开发、验证和交付收口
-- 需要同时产出飞书指南、介绍画板和安装包
-- 不想再依赖多个分散 skill 手动拼接完整交付链路
+你可以用它来：
+
+- 把一个重复流程沉淀成可复用的 skill
+- 自动补齐需求澄清、计划推进、执行与交付收口
+- 同时生成飞书使用指南、介绍画板和安装包
+- 用统一链路替代多个 skill 和手工步骤的来回拼接
+- 面向多 Agent 输出，而不是只面向单一运行环境
+
+## 它解决的核心问题
+
+很多 skill 开发过程并不是“写完一个文件”这么简单，而是会被拆散成很多环节：
+
+- 需求信息不完整，需要先澄清
+- 需要判断能不能复用已有 skill 或流程
+- 需要生成计划，并在关键节点停下来确认
+- 需要把开发、验证、文档和打包真正串起来
+- 需要最终交付给别人用，而不是只停留在本地草稿
+
+**skill-creator-pro** 的价值，不只是“帮你生成 skill”，而是把整条交付链路真正收口成一个可重复执行的产品化流程。
 
 ## 核心能力
 
@@ -39,31 +50,46 @@
 - **飞书交付内建**：支持飞书指南、画板、命令计划一体化生成
 - **多 Agent 打包**：支持标准 zip 与 Agent 安装包输出
 
-## 仓库结构
+## 它会怎么帮你推进
 
-```text
-.
-├── SKILL.md                    # 技能定义与主说明
-├── README.md                   # GitHub 首页说明
-├── LICENSE                     # MIT License
-├── CHANGELOG.md                # 版本与整理记录
-├── CONTRIBUTING.md             # 贡献说明
-├── agents/                     # Agent interface 配置
-├── assets/                     # 模板、样式、图表资源、预览图
-├── docs/images/                # README 顶部展示图
-├── references/                 # 内置参考技能与规则资料
-└── scripts/                    # 澄清、执行、打包、校验、交付脚本
-```
+典型推进路径是：
 
-## 使用入口
+1. 先生成结构化需求澄清摘要
+2. 检查是否有现成 skill / 模式可复用
+3. 判断是 simple 还是 complex 路线
+4. 初始化计划与执行骨架
+5. 在 Gate 1 等待你确认 plan
+6. 进入开发、验证、评审与交付准备
+7. 在 Gate 2 等待你确认最终交付
+8. 输出飞书指南、介绍画板和安装包
 
-建议先阅读：
+## 如何开始使用
+
+建议按这个顺序开始：
+
+### 1. 先看技能主说明
 
 - `SKILL.md`
+
+### 2. 再看执行主链路
+
 - `references/workflow-playbook.md`
+
+### 3. 如果你想理解它是怎么拼出来的
+
 - `references/source-map.md`
 
-## 主要输出产物
+## 最短使用路径
+
+如果你只想快速理解怎么开始，可以直接按下面这条最短路径走：
+
+1. 阅读 `SKILL.md`
+2. 用你的场景描述来触发这个 skill
+3. 先完成澄清与 Gate 1
+4. 再推进开发、验证、文档与打包
+5. 在 Gate 2 验收最终交付
+
+## 最终你会得到什么
 
 这个 skill 在本地运行时可以生成：
 
@@ -73,6 +99,52 @@
 - `skill-creator-pro.zip`
 - `skill-creator-pro-agent-install.zip`
 - `agent-install-manifest.json`
+
+## 一图看懂
+
+### 为什么它不是“再多一个 skill”
+
+![Skill Creator Pro Board 1](docs/images/board-01.svg)
+
+### 它的功能与推进流程
+
+![Skill Creator Pro Board 2](docs/images/board-02.svg)
+
+## 仓库里包含什么
+
+这是一个 **skill-only 发布仓库**，公开仓库只保留 skill 本体相关内容：
+
+- `SKILL.md`
+- `agents/`
+- `assets/`
+- `references/`
+- `scripts/`
+- `docs/images/`
+- GitHub 展示所需的说明文件
+
+```text
+.
+├── SKILL.md
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── agents/
+├── assets/
+├── docs/images/
+├── references/
+└── scripts/
+```
+
+## 这个公开仓库不保留什么
+
+为了让仓库更像“可直接使用的 skill 项目”，而不是“开发现场”，以下内容不作为公开仓库长期保留：
+
+- 测试用例
+- eval 过程文件
+- 验证报告
+- 构建产物
+- 本地缓存文件
 
 ## 注意事项
 
