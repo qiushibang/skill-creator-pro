@@ -1,6 +1,0 @@
-{
-  "board_type": "skill-capability-integration-board",
-  "deliverable": "board-01-skill-integration-painpoints.json",
-  "recommended_position": "在“技能简介”后插入",
-  "explanation": "先解释为什么这个 skill 要整合多个外部能力，帮助读者先理解问题与价值，再继续读使用细节。"
-}

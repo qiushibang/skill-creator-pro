@@ -1,9 +1,0 @@
-{
-  "board_type": "custom-board-1",
-  "placement": {
-    "doc": "FHoHdkVsGolDBdxWovVl7wTfgOf",
-    "after_section": "技能简介"
-  },
-  "insert_markdown": "<whiteboard type=\"blank\"></whiteboard>",
-  "board_spec_path": "board/board-01-skill-integration-painpoints.json"
-}
