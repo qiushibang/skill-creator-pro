@@ -6,6 +6,13 @@
 
 > 如果你想要的不是“再多一个脚手架”，而是一条真正能从输入走到交付的 skill 生产链，这个项目就是为这个目标设计的。
 
+| 为什么它不是普通脚手架 | 它如何把开发与交付串起来 |
+| --- | --- |
+| <img src="docs/images/board-01.svg" alt="Skill Creator Pro Board 1" width="100%" /> | <img src="docs/images/board-02.svg" alt="Skill Creator Pro Board 2" width="100%" /> |
+| 它强调的不是“生成一个目录”，而是把需求理解、计划、开发、验证、审查和交付拉成一条完整主链。 | 它把需求澄清、TDD / verify-first、Lark 补位、安全审查、文档与安装包输出整合进同一套推进流程。 |
+
+如果这正是你想要的方向，再继续往下看完整能力说明、适用场景和仓库结构。
+
 ## 它的特色不只是“能做 skill”
 
 很多 skill 工具解决的是某一个局部问题，例如：
@@ -178,16 +185,6 @@
 - `skill-creator-pro.zip`
 - `skill-creator-pro-agent-install.zip`
 - `agent-install-manifest.json`
-
-## 一图看懂
-
-### 为什么它不是“再多一个 skill”
-
-![Skill Creator Pro Board 1](docs/images/board-01.svg)
-
-### 它的功能与推进流程
-
-![Skill Creator Pro Board 2](docs/images/board-02.svg)
 
 ## 仓库里包含什么
 
